@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import CompoPerso from './components/CompoPerso.vue'
 </script>
 
 <template>
@@ -9,10 +10,12 @@ import HelloWorld from './components/HelloWorld.vue'
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
+      <CompoPerso msg="composent personnalisé" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/notes">Notes</RouterLink>
       </nav>
     </div>
   </header>
